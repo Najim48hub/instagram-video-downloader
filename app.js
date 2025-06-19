@@ -18,33 +18,7 @@ app.post('/download', async (req, res) => {
     try {
         const apiResponse = await axios.get('https://api.example.com/instagram', {
             params: { url },
-            headers: { 'Authorization': 'const http = require('https');
-
-const options = {
-	method: 'GET',
-	hostname: 'instagram-downloader-download-instagram-stories-videos4.p.rapidapi.com',
-	port: null,
-	path: '/convert?url=https%3A%2F%2Fwww.instagram.com%2Fp%2FCxLWFNksXOE%2F%3Figsh%3DMWc3b3ZkbHoxa2YyOQ%3D%3D',
-	headers: {
-		'x-rapidapi-key': '010ecb5d36mshafaf75fd79fd878p17745cjsn35e8c2ac5f26',
-		'x-rapidapi-host': 'instagram-downloader-download-instagram-stories-videos4.p.rapidapi.com'
-	}
-};
-
-const req = http.request(options, function (res) {
-	const chunks = [];
-
-	res.on('data', function (chunk) {
-		chunks.push(chunk);
-	});
-
-	res.on('end', function () {
-		const body = Buffer.concat(chunks);
-		console.log(body.toString());
-	});
-});
-
-req.end();' }
+            headers: { 'Authorization': '010ecb5d36mshafaf75fd79fd878p17745cjsn35e8c2ac5f26' }
         });
 
         const videoData = {
