@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+body.dark {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #405de6;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#theme-toggle {
+    background: #fff;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: #ddd;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#video-url {
+    padding: 12px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#download-btn {
+    padding: 12px 24px;
+    background: #405de6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#download-btn:hover {
+    background: #324ab2;
+}
+
+.loading {
+    margin: 20px 0;
+}
+
+.loading img {
+    width: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+body.dark .result {
+    background: #2c2c2c;
+}
+
+#thumbnail {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.download-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.download-now:hover {
+    background: #218838;
+}
+
+.history {
+    margin-top: 30px;
+}
+
+#history-list {
+    list-style: none;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#history-list li {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    word-break: break-all;
+}
+
+body.dark #history-list li {
+    background: #2c2c2c;
+}
+
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    #video-url, #download-btn {
+        width: 100%;
+    }
+}
