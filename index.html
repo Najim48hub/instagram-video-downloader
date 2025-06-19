@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download Instagram videos easily with our fast and free tool.">
+    <meta name="keywords" content="Instagram video downloader, download Instagram videos, free Instagram downloader">
+    <meta name="author" content="Your Name">
+    <title>InstaDownloader - Download Instagram Videos</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">InstaDownloader</div>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+    <main>
+        <h1>Download Instagram Videos</h1>
+        <p>Paste the Instagram video URL below to download it instantly!</p>
+        <div class="input-container">
+            <input type="url" id="video-url" placeholder="Enter Instagram Video URL" required>
+            <button id="download-btn">Download</button>
+        </div>
+        <div id="loading" class="loading hidden">
+            <img src="assets/loading.gif" alt="Loading...">
+        </div>
+        <div id="result" class="result hidden">
+            <img id="thumbnail" src="" alt="Video Thumbnail">
+            <h3 id="title"></h3>
+            <a id="download-link" href="#" target="_blank" class="download-now">Download Now</a>
+        </div>
+        <div id="history" class="history">
+            <h2>Download History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
