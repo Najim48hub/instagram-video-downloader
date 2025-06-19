@@ -1,0 +1,14 @@
+{
+    "name": "instagram-video-downloader",
+    "version": "1.0.0",
+    "description": "A web app to download Instagram videos",
+    "main": "server/app.js",
+    "scripts": {
+        "start": "node server/app.js"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "cors": "^2.8.5",
+        "express": "^4.19.2"
+    }
+}
