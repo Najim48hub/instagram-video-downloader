@@ -18,7 +18,7 @@ app.post('/download', async (req, res) => {
     try {
         const apiResponse = await axios.get('https://api.example.com/instagram', {
             params: { url },
-            headers: { 'Authorization': '010ecb5d36mshafaf75fd79fd878p17745cjsn35e8c2ac5f26' }
+            headers: { 'Authorization': '9e20ed41-8e1b-4eaf-908e-d72b37ebd214' }
         });
 
         const videoData = {
